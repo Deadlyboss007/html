@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Main container with padding -->
+<div class="container mx-auto px-4">
+    <!-- Top row: 3 smaller cards -->
+    <!-- Grid with 1 column on mobile, 3 columns on sm breakpoint and up -->
+    <!-- Gap of 1.5rem between grid items, large bottom margin to separate from next row -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+      <!-- Card 1 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- Image with fixed height and object-cover to maintain aspect ratio -->
+        <a href="#"><img class="rounded-t-lg w-full h-48 object-cover" src="/docs/images/blog/image-1.jpg" alt="" /></a>
+        <div class="p-5">
+          <a href="#"><h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Card 1 Title</h5></a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Brief description for Card 1.</p>
+          <!-- Read more button with hover and focus states -->
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <!-- SVG arrow icon -->
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Card 2 (structure identical to Card 1) -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#"><img class="rounded-t-lg w-full h-48 object-cover" src="/docs/images/blog/image-2.jpg" alt="" /></a>
+        <div class="p-5">
+          <a href="#"><h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Card 2 Title</h5></a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Brief description for Card 2.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Card 3 (structure identical to Cards 1 and 2) -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#"><img class="rounded-t-lg w-full h-48 object-cover" src="/docs/images/blog/image-3.jpg" alt="" /></a>
+        <div class="p-5">
+          <a href="#"><h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Card 3 Title</h5></a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Brief description for Card 3.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom row: 2 larger cards -->
+    <!-- Grid with 1 column on mobile, 2 columns on sm breakpoint and up -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <!-- Card 4 (larger card) -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- Larger image height for bottom cards -->
+        <a href="#"><img class="rounded-t-lg w-full h-64 object-cover" src="/docs/images/blog/image-4.jpg" alt="" /></a>
+        <div class="p-5">
+          <!-- Larger font size for title -->
+          <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Card 4 Title (Larger)</h5></a>
+          <!-- More detailed description -->
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This is a longer description for Card 4, which is larger than the cards above. It provides more space for content.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Card 5 (larger card, structure identical to Card 4) -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="#"><img class="rounded-t-lg w-full h-64 object-cover" src="/docs/images/blog/image-5.jpg" alt="" /></a>
+        <div class="p-5">
+          <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Card 5 Title (Larger)</h5></a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This is a longer description for Card 5, which is also larger than the cards above. It provides more space for content.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
